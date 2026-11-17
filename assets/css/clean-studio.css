@@ -1,0 +1,1272 @@
+/* ==========================================================================
+   CLEAN STUDIO STYLESHEET — ARYAN KUMAR PORTFOLIO
+   Modern, High-Contrast, Semantic & Self-Contained Stylesheet
+   ========================================================================== */
+
+:root {
+  --studio-dark: #0b0d12;
+  --studio-surface: #12141a;
+  --studio-card-dark: #161922;
+  --studio-obsidian: #0f172a;
+  --studio-slate: #475569;
+  --studio-muted: #64748b;
+  --studio-light: #f8fafc;
+  --studio-card-light: #ffffff;
+  --studio-lime: #c8f558;
+  --studio-lime-hover: #b8e645;
+  --studio-lime-glow: rgba(200, 245, 88, 0.25);
+  --studio-border-dark: rgba(255, 255, 255, 0.1);
+  --studio-border-light: #e2e8f0;
+  --Devix-lime: #c8f558;
+  --devix-lime: #c8f558;
+}
+
+/* ==========================================================================
+   GLOBAL BASE & TYPOGRAPHY
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--studio-slate);
+  background-color: var(--studio-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.text-lime {
+  color: var(--studio-lime) !important;
+}
+
+/* Ensure links & buttons are always clickable */
+a, button, .theme-btn, .pill-option-btn, .Devix-nav-link, .Devix-btn-download {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* ==========================================================================
+   1. FLOATING TOP NAVBAR (Fixed Pill across all 5 pages)
+   ========================================================================== */
+header.Devix-floating-header,
+.Devix-floating-header {
+  position: fixed !important;
+  top: 18px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(92%, 1120px) !important;
+  height: 64px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+nav.Devix-glass-pill,
+.Devix-glass-pill {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 24px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(15, 18, 26, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+  box-sizing: border-box !important;
+  z-index: 9999 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Brand Logo "Aryan." */
+.Devix-brand-logo,
+a.Devix-brand-logo {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.Devix-brand-logo:hover {
+  opacity: 0.85 !important;
+}
+
+.Devix-brand-logo .dot {
+  color: var(--studio-lime) !important;
+}
+
+/* Horizontal Center Menu Links */
+.Devix-nav-menu {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 24px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.Devix-nav-menu li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+}
+
+.Devix-nav-link,
+a.Devix-nav-link {
+  color: #e2e8f0 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  padding: 4px 0 !important;
+}
+
+.Devix-nav-link:hover {
+  color: var(--studio-lime) !important;
+}
+
+.Devix-nav-link.active {
+  color: var(--studio-lime) !important;
+  font-weight: 700 !important;
+  position: relative !important;
+}
+
+.Devix-nav-link.active::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -4px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: var(--studio-lime) !important;
+  border-radius: 2px !important;
+}
+
+/* Right "Download CV" Button */
+.Devix-btn-download,
+a.Devix-btn-download {
+  background: var(--studio-lime) !important;
+  color: #0b0d12 !important;
+  font-weight: 700 !important;
+  font-size: 13.5px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  padding: 8px 18px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  border: none !important;
+  line-height: 1.2 !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 10px rgba(200, 245, 88, 0.25) !important;
+  white-space: nowrap !important;
+}
+
+.Devix-btn-download:hover {
+  background: var(--studio-lime-hover) !important;
+  color: #000000 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(200, 245, 88, 0.4) !important;
+}
+
+.Devix-btn-download svg,
+.Devix-btn-download line,
+.Devix-btn-download polyline {
+  stroke: #0b0d12 !important;
+}
+
+/* Mobile Toggle Button */
+.Devix-mobile-toggle {
+  display: none !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+}
+
+/* Hide duplicate unstyled mobile menu text at top-left across all pages */
+.Devix-mobile-drawer,
+div.Devix-mobile-drawer {
+  display: none !important;
+}
+
+.Devix-mobile-drawer.open,
+div.Devix-mobile-drawer.open {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  position: fixed !important;
+  top: 90px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(92%, 360px) !important;
+  background: rgba(15, 18, 26, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  z-index: 9998 !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.Devix-mobile-drawer a {
+  color: #e2e8f0 !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.Devix-mobile-drawer a.active {
+  color: var(--studio-lime) !important;
+  font-weight: 700 !important;
+  background: rgba(200, 245, 88, 0.1) !important;
+}
+
+.Devix-mobile-drawer .Devix-btn-download {
+  color: #0b0d12 !important;
+  background: var(--studio-lime) !important;
+  text-align: center !important;
+  justify-content: center !important;
+  margin-top: 8px !important;
+}
+
+/* Hide unstyled meanmenu elements */
+.mean-bar,
+.mean-container .mean-bar,
+.mean-container .mean-nav {
+  display: none !important;
+}
+
+@media (max-width: 860px) {
+  .Devix-nav-menu {
+    display: none !important;
+  }
+  .Devix-mobile-toggle {
+    display: inline-flex !important;
+  }
+}
+
+/* ==========================================================================
+   2. WHITE-ON-WHITE HEADING FIXES ON LIGHT SECTIONS
+   ========================================================================== */
+.section-editorial-light,
+section.section-editorial-light,
+.page-header-light,
+section.page-header-light,
+.light-section,
+section.light-section {
+  background-color: var(--studio-light) !important;
+  color: var(--studio-slate) !important;
+  position: relative !important;
+}
+
+/* Strict Obsidian Headings on Light Sections */
+.section-editorial-light h1,
+.section-editorial-light h2,
+.section-editorial-light h3,
+.section-editorial-light h4,
+.section-editorial-light h5,
+.section-editorial-light h6,
+.page-header-light h1,
+.page-header-light h2,
+.page-header-light h3,
+.light-section h1,
+.light-section h2,
+.light-section h3,
+.light-section h4 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+/* Strict Slate Subtext on Light Sections */
+.section-editorial-light p,
+.page-header-light p,
+.light-section p,
+.section-editorial-light .sub-text,
+.page-header-light .sub-text {
+  color: #475569 !important;
+  line-height: 1.65 !important;
+}
+
+/* Page Header Sections on Inner Pages (Work, Services, Experience, Contact) */
+.page-header-light,
+section.page-header-light,
+section[data-editorial="header-light"] {
+  background: #f8fafc !important;
+  border-bottom: 1px solid var(--studio-border-light) !important;
+}
+
+.page-header-light h1,
+section[data-editorial="header-light"] h1 {
+  color: #0f172a !important;
+  font-size: clamp(2.4rem, 5vw, 4rem) !important;
+  font-weight: 800 !important;
+}
+
+.page-header-light p,
+section[data-editorial="header-light"] p {
+  color: #475569 !important;
+  font-size: 1.15rem !important;
+  max-width: 660px !important;
+}
+
+/* Section Title & Subtitle Badge */
+.sub-title,
+span.sub-title {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #0284c7 !important;
+  letter-spacing: 0.05em !important;
+  display: inline-block !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Cards on Light Sections */
+.Devix-service-card,
+.Devix-process-card,
+.Devix-project-card,
+.timeline-entry-card,
+.skills-matrix-card {
+  background: #ffffff !important;
+  border: 1px solid var(--studio-border-light) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.Devix-service-card:hover,
+.Devix-process-card:hover,
+.Devix-project-card:hover,
+.timeline-entry-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.Devix-service-card h2,
+.Devix-service-card h3,
+.Devix-process-card h2,
+.Devix-process-card h3,
+.Devix-project-card h2,
+.Devix-project-card h3 {
+  color: #0f172a !important;
+  font-weight: 800 !important;
+}
+
+.Devix-service-card p,
+.Devix-project-card p {
+  color: #475569 !important;
+}
+
+.Devix-process-card p,
+.process-card p {
+  color: #334155 !important;
+}
+
+.process-step-digit {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  line-height: 1 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* FAQ Accordion on Services Page */
+.Devix-faq-card,
+.faq-accordion-item {
+  background: #ffffff !important;
+  border: 1px solid var(--studio-border-light) !important;
+  border-radius: 14px !important;
+  margin-bottom: 12px !important;
+  overflow: hidden !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.Devix-faq-card.active,
+.faq-accordion-item.active {
+  border-color: #0284c7 !important;
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.08) !important;
+}
+
+.Devix-faq-btn,
+.faq-header-btn {
+  width: 100% !important;
+  padding: 18px 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: none !important;
+  border: none !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  cursor: pointer !important;
+  text-align: left !important;
+}
+
+.Devix-faq-btn:hover {
+  color: #0284c7 !important;
+}
+
+.Devix-faq-btn .faq-icon {
+  color: #0284c7 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.Devix-faq-card.active .faq-icon {
+  transform: rotate(180deg) !important;
+}
+
+.Devix-faq-answer,
+.faq-body-content {
+  display: none !important;
+  padding: 0 22px 18px 22px !important;
+  color: #475569 !important;
+  line-height: 1.65 !important;
+  font-size: 0.95rem !important;
+}
+
+.Devix-faq-card.active .Devix-faq-answer,
+.faq-accordion-item.active .faq-body-content {
+  display: block !important;
+}
+
+/* Filter Tab Pills (Work Page) */
+.filter-tab-pill {
+  padding: 8px 18px !important;
+  border-radius: 999px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  border: 1px solid #cbd5e1 !important;
+  background: #ffffff !important;
+  color: #475569 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.filter-tab-pill:hover {
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+}
+
+.filter-tab-pill.active {
+  background: #0f172a !important;
+  color: var(--studio-lime) !important;
+  border-color: #0f172a !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2) !important;
+}
+
+/* ==========================================================================
+   3. HERO SECTION CONTRAST & 2-COLUMN GRID (index.html)
+   ========================================================================== */
+.hero-section-3,
+.hero-3,
+section.hero-section-3,
+section.hero-3 {
+  background: #0b0d12 !important;
+  color: #ffffff !important;
+  padding: 96px 5% 40px !important;
+  min-height: 100vh !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.hero-section-3 .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.hero-section-3 .row {
+  display: grid !important;
+  grid-template-columns: 1.2fr 0.8fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 991px) {
+  .hero-section-3 {
+    padding-top: 110px !important;
+    padding-bottom: 60px !important;
+  }
+  .hero-section-3 .row {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+}
+
+/* Decorative Hero Shapes */
+.hero-shape-1,
+.hero-shape-2,
+.hero-shape-1 img,
+.hero-shape-2 img {
+  z-index: 0 !important;
+  pointer-events: none !important;
+  opacity: 0.12 !important;
+}
+
+/* Hero Status Badge */
+.Devix-status-badge {
+  background: rgba(200, 245, 88, 0.12) !important;
+  color: var(--studio-lime) !important;
+  border: 1px solid rgba(200, 245, 88, 0.28) !important;
+  border-radius: 999px !important;
+  padding: 6px 14px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.pulse-beacon-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: var(--studio-lime) !important;
+  box-shadow: 0 0 10px var(--studio-lime) !important;
+  display: inline-block !important;
+}
+
+/* Hero Title & Bio */
+.hero-section-3 h1.title,
+.hero-section-3 h1 {
+  font-size: clamp(2.3rem, 4.4vw, 3.8rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  margin: 1.25rem 0 !important;
+  color: #ffffff !important;
+}
+
+.hero-section-3 p {
+  font-size: 1.1rem !important;
+  line-height: 1.65 !important;
+  color: #cbd5e1 !important;
+  max-width: 580px !important;
+  margin-bottom: 2rem !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* Hero Buttons */
+.hero-btn-area {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+  align-items: center !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.theme-btn {
+  background: var(--studio-lime) !important;
+  color: #0b0d12 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  padding: 12px 24px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 15px rgba(200, 245, 88, 0.25) !important;
+}
+
+.theme-btn:hover {
+  background: var(--studio-lime-hover) !important;
+  color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(200, 245, 88, 0.4) !important;
+}
+
+.theme-btn.style-2 {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: none !important;
+}
+
+.theme-btn.style-2:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* Hero Profiles Row (LinkedIn / Upwork / Freelancer) */
+.hero-profiles-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 0.65rem !important;
+  margin-top: 1.5rem !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.hero-profile-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  color: #cbd5e1 !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 0.4rem 0.85rem !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.hero-profile-pill:hover {
+  color: var(--studio-lime) !important;
+  border-color: rgba(200, 245, 88, 0.5) !important;
+  background: rgba(200, 245, 88, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+.hero-profile-pill i {
+  color: var(--studio-lime) !important;
+}
+
+/* Right "AK" Monogram Card */
+.ak-emblem-card {
+  background: #161922 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 28px !important;
+  padding: 22px !important;
+  min-width: 340px !important;
+  text-align: center !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5) !important;
+  position: relative !important;
+  z-index: 10 !important;
+  transition: all 0.3s ease !important;
+}
+
+.ak-emblem-card:hover {
+  border-color: rgba(200, 245, 88, 0.3) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65), 0 0 25px rgba(200, 245, 88, 0.12) !important;
+}
+
+.ak-monogram-symbol {
+  width: 120px !important;
+  height: 120px !important;
+  margin: 0 auto 1.25rem auto !important;
+  border-radius: 24px !important;
+  background: linear-gradient(135deg, rgba(200, 245, 88, 0.15) 0%, rgba(22, 25, 34, 0.95) 100%) !important;
+  border: 2px solid var(--studio-lime) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  color: var(--studio-lime) !important;
+  letter-spacing: -0.04em !important;
+  box-shadow: 0 10px 30px rgba(200, 245, 88, 0.22) !important;
+}
+
+.ak-emblem-card h2 {
+  font-size: 1.55rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.live-clock-badge {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 999px !important;
+  padding: 5px 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8rem !important;
+  color: #cbd5e1 !important;
+  margin-top: 10px !important;
+}
+
+.hero-quick-pill {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  margin-top: 8px !important;
+  text-align: left !important;
+}
+
+.hero-quick-pill i {
+  color: var(--studio-lime) !important;
+  font-size: 1.1rem !important;
+}
+
+.hero-quick-pill .qp-title {
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.hero-quick-pill .qp-sub {
+  font-size: 0.75rem !important;
+  color: #94a3b8 !important;
+}
+
+/* ==========================================================================
+   4. CONTACT.HTML INTERACTIVE PILLS & SUBMIT BUTTON
+   ========================================================================== */
+.pill-option-btn,
+.service-pill-select,
+.budget-pill-select {
+  padding: 8px 14px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 999px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 0.85rem !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: #475569 !important;
+  background: #ffffff !important;
+  transition: all 0.2s ease !important;
+  user-select: none !important;
+  margin-right: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.pill-option-btn:hover,
+.service-pill-select:hover,
+.budget-pill-select:hover {
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+}
+
+.pill-option-btn.active,
+.service-pill-select.active,
+.budget-pill-select.active {
+  background: var(--studio-lime) !important;
+  border-color: #0f172a !important;
+  color: #0f172a !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(200, 245, 88, 0.4) !important;
+}
+
+/* Submit Button ("Send Message") */
+button[type="submit"],
+.btn-Devix-lime,
+.btn-devix-lime {
+  background: #0f172a !important;
+  color: var(--studio-lime) !important;
+  padding: 14px 28px !important;
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2) !important;
+  font-size: 1rem !important;
+}
+
+button[type="submit"]:hover,
+.btn-Devix-lime:hover,
+.btn-devix-lime:hover {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.3) !important;
+}
+
+button[type="submit"] svg,
+.btn-Devix-lime svg {
+  stroke: var(--studio-lime) !important;
+}
+
+button[type="submit"]:hover svg,
+.btn-Devix-lime:hover svg {
+  stroke: #ffffff !important;
+}
+
+/* Form inputs on Contact Page */
+.form-control-Devix,
+.form-control-devix,
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  font-family: inherit !important;
+  font-size: 0.92rem !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.form-control-Devix:focus,
+.form-control-devix:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #0f172a !important;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Contact Profile Box */
+.contact-profile-box {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 16px !important;
+  padding: 18px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  text-decoration: none !important;
+  color: #0f172a !important;
+  transition: all 0.2s ease !important;
+  margin-bottom: 1rem !important;
+}
+
+.contact-profile-box:hover {
+  border-color: #0284c7 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ==========================================================================
+   5. SITE FOOTER (Solid Obsidian Dark Across All Pages)
+   ========================================================================== */
+footer.Devix-site-footer,
+.Devix-site-footer {
+  background: #0b0d12 !important;
+  color: #94a3b8 !important;
+  padding: 70px 0 30px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.Devix-site-footer a {
+  color: #94a3b8 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.Devix-site-footer a:hover {
+  color: var(--studio-lime) !important;
+}
+
+.Devix-footer-logo,
+a.Devix-footer-logo {
+  color: #ffffff !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  display: inline-block !important;
+  margin-bottom: 1rem !important;
+}
+
+.Devix-footer-nav-title {
+  color: #ffffff !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.Devix-footer-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.Devix-footer-list li {
+  margin-bottom: 0.55rem !important;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: #0f172a !important;
+  color: var(--studio-lime) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 9990 !important;
+  transition: all 0.2s ease !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.back-to-top:hover {
+  background: var(--studio-lime) !important;
+  color: #0b0d12 !important;
+  transform: translateY(-2px) !important;
+}
+
+
+/* ==========================================================================
+   6. FULL-WIDTH CENTERED CONTAINERS — Stop Narrow Squeezed Cards & Left Clipping
+   ========================================================================== */
+.container,
+section > div.container,
+.hero-grid,
+.services-grid {
+  width: 100% !important;
+  max-width: 1220px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+}
+
+/* Override Bootstrap negative-margin rows that cause left-edge clipping */
+.container > .row,
+section .container > .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* ==========================================================================
+   7. HERO SECTION — Updated 1.35fr / 0.85fr Grid + h1 Clamp + AK Card Width
+   ========================================================================== */
+.hero-section-3 .container {
+  max-width: 1240px !important;
+}
+
+.hero-section-3 .row {
+  display: grid !important;
+  grid-template-columns: 1.55fr 0.75fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.hero-section-3 h1.title,
+.hero-section-3 h1 {
+  font-size: clamp(2.3rem, 3.6vw, 3.3rem) !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  line-height: 1.12 !important;
+}
+
+.ak-emblem-card {
+  min-width: 340px !important;
+  padding: 22px !important;
+}
+
+@media (max-width: 991px) {
+  .hero-section-3 .row {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .ak-emblem-card {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   8. INFINITE SCROLLING MARQUEE TICKER
+   ========================================================================== */
+.Devix-marquee-strip,
+.marquee-strip {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  background: #ffffff !important;
+  border-top: 1px solid #e2e8f0 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding: 16px 0 !important;
+  display: flex !important;
+  width: 100% !important;
+}
+
+.Devix-marquee-inner,
+.marquee-inner {
+  display: flex !important;
+  flex-shrink: 0 !important;
+  min-width: 100% !important;
+  width: max-content !important;
+  animation: marqueeScroll 22s linear infinite !important;
+}
+
+.Devix-marquee-strip:hover .Devix-marquee-inner,
+.marquee-strip:hover .marquee-inner {
+  animation-play-state: paused !important;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.Devix-marquee-text,
+.marquee-text {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  padding-right: 28px !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  letter-spacing: 0.05em !important;
+}
+
+.Devix-marquee-text .dot,
+.marquee-text .dot {
+  color: #c8f558 !important;
+  font-size: 1.4rem !important;
+}
+
+/* ==========================================================================
+   9. CLEAN FULL-WIDTH PROJECT SHOWCASE CARDS (index.html & work.html)
+   ========================================================================== */
+.Devix-project-card,
+.project-card {
+  display: grid !important;
+  grid-template-columns: 1.1fr 1fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 24px !important;
+  padding: 32px !important;
+  margin-bottom: 32px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Reset nested bootstrap row inside project card so grid takes over */
+.Devix-project-card > .row,
+.project-card > .row {
+  display: contents !important;
+}
+
+.Devix-project-card .col-lg-6,
+.project-card .col-lg-6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Project thumbnail styling */
+.project-thumbnail-wrapper {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.project-thumbnail-wrapper img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+  border-radius: 10px !important;
+}
+
+/* Project body content */
+.project-body-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 8px 0 !important;
+}
+
+/* Project category badge */
+.project-category-badge {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  background: rgba(15, 23, 42, 0.85) !important;
+  color: #c8f558 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  z-index: 3 !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+/* Project client flag */
+.project-client-flag {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  color: #0284c7 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Responsive project cards */
+@media (max-width: 991px) {
+  .Devix-project-card,
+  .project-card {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 24px !important;
+  }
+}
+
+/* ==========================================================================
+   10. SECTION PADDING & DARK SECTION DEFAULTS
+   ========================================================================== */
+.section-padding {
+  padding: 80px 0 !important;
+}
+
+.section-editorial-dark,
+section.section-editorial-dark {
+  background: #0b0d12 !important;
+  color: #cbd5e1 !important;
+}
+
+.section-editorial-dark h1,
+.section-editorial-dark h2,
+.section-editorial-dark h3 {
+  color: #ffffff !important;
+}
+
+.section-editorial-dark p {
+  color: #cbd5e1 !important;
+}
+
+/* Agency service cards on services.html */
+.agency-service-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(18,20,26,0.08) !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.agency-service-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.08) !important;
+}
+
+/* Timeline styles for experience.html */
+.agency-timeline {
+  position: relative !important;
+  padding-left: 28px !important;
+  border-left: 2px solid #e2e8f0 !important;
+}
+
+.timeline-entry {
+  position: relative !important;
+  margin-bottom: 2rem !important;
+}
+
+.timeline-bullet {
+  position: absolute !important;
+  left: -34px !important;
+  top: 6px !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background: #0284c7 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 0 0 3px #e0f2fe !important;
+}
+
+.timeline-entry-card {
+  padding: 1.25rem !important;
+}

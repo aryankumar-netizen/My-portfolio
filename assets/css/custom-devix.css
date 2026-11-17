@@ -1,0 +1,1447 @@
+
+/* Hero Background Shapes */
+.hero-shape-1,
+.hero-shape-2,
+.hero-shape-1 img,
+.hero-shape-2 img {
+  z-index: 0 !important;
+  pointer-events: none !important;
+  opacity: 0.12 !important;
+}
+:root {
+  --devix-dark: #12141a;
+  --devix-darker: #090a0f;
+  --devix-card-dark: #1a1d26;
+  --devix-light: #f8fafc;
+  --devix-card-light: #ffffff;
+  --devix-lime: #c8f558;
+  --devix-lime-hover: #b8e645;
+  --devix-lime-glow: rgba(200, 245, 88, 0.28);
+  --devix-border-dark: rgba(255, 255, 255, 0.1);
+  --devix-border-light: rgba(18, 20, 26, 0.08);
+}
+
+/* Ensure all buttons and links are strictly clickable */
+.theme-btn,
+.theme-btn.style-2,
+.project-action-btn,
+.btn-live-demo,
+.btn-source-code,
+.nav-link-btn,
+.nav-cta-download,
+.social-icon,
+.filter-btn,
+.pill-select-button,
+.devix-nav-link,.Devix-nav-link,
+.devix-btn-download,.Devix-btn-download,
+.devix-mobile-toggle,.Devix-mobile-toggle,
+a {
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 30 !important;
+  cursor: pointer !important;
+}
+
+.mouseCursor {
+  pointer-events: none !important;
+}
+
+.preloader {
+  pointer-events: none !important;
+}
+
+/* Solid Obsidian Hero Section Background */
+.hero-3,
+.hero-section-3,
+section.hero-section-3 {
+  background: #0b0d12 !important;
+}
+
+/* ==========================================================================
+   FLOATING GLASS NAVBAR (Fixed Pill across all 5 pages)
+   ========================================================================== */
+.devix-floating-header,.Devix-floating-header,
+.Devix-floating-header {
+  position: fixed !important;
+  top: 18px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 9999 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 1rem !important;
+  width: 100% !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+}
+
+.devix-glass-pill,.Devix-glass-pill,
+.Devix-glass-pill {
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1.5rem !important;
+  background: rgba(18, 20, 26, 0.94) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 9999px !important;
+  padding: 0.55rem 0.75rem 0.55rem 1.4rem !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.2) !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 10000 !important;
+  transition: all 0.3s ease;
+}
+
+.devix-nav-menu,.Devix-nav-menu,
+.devix-nav-menu li,.Devix-nav-menu li,
+.devix-nav-link,.Devix-nav-link,
+.devix-brand-logo,.Devix-brand-logo,
+.devix-btn-download,.Devix-btn-download,
+.devix-mobile-toggle {
+,.Devix-mobile-toggle {
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 10001 !important;
+}
+
+.devix-glass-pill:hover {
+,.Devix-glass-pill:hover {
+  border-color: rgba(200, 245, 88, 0.35) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6), 0 0 15px rgba(200, 245, 88, 0.08) !important;
+}
+
+.devix-brand-logo {
+,.Devix-brand-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.devix-brand-logo .dot {
+,.Devix-brand-logo .dot {
+  color: var(--devix-lime);
+  margin-left: 1px;
+}
+
+.devix-nav-menu {
+,.Devix-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.devix-nav-link {
+,.Devix-nav-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.devix-nav-link:hover {
+,.Devix-nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.devix-nav-link.active {
+,.Devix-nav-link.active {
+  color: var(--devix-lime) !important;
+  background: rgba(200, 245, 88, 0.12);
+  font-weight: 700;
+}
+
+.devix-nav-link.active::after {
+,.Devix-nav-link.active::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: var(--devix-lime);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.devix-btn-download {
+,.Devix-btn-download {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--devix-lime);
+  color: #12141a;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--devix-lime);
+  box-shadow: 0 4px 15px var(--devix-lime-glow);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.devix-btn-download:hover {
+,.Devix-btn-download:hover {
+  background: var(--devix-lime-hover);
+  color: #12141a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(200, 245, 88, 0.4);
+}
+
+.devix-mobile-toggle {
+,.Devix-mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.devix-mobile-drawer {
+,.Devix-mobile-drawer {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(18, 20, 26, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  display: none;
+  flex-direction: column;
+  gap: 0.65rem;
+  z-index: 1199;
+}
+
+.devix-mobile-drawer.open {
+,.Devix-mobile-drawer.open {
+  display: flex;
+}
+
+.devix-mobile-drawer .devix-nav-link {
+,.Devix-mobile-drawer .Devix-nav-link {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.devix-mobile-drawer .devix-btn-download {
+,.Devix-mobile-drawer .Devix-btn-download {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .devix-nav-menu { display: none; }
+,  .Devix-nav-menu { display: none; }
+  .devix-mobile-toggle { display: block; }
+,  .Devix-mobile-toggle { display: block; }
+  .devix-glass-pill,  .Devix-glass-pill,
+.Devix-glass-pill { padding: 0.5rem 0.85rem; }
+}
+
+/* ==========================================================================
+   HERO MONOGRAM EMBLEM CARD (Replaces dummy stock photos)
+   ========================================================================== */
+.ak-emblem-card {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 2.25rem 2rem;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  transition: all 0.35s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.ak-emblem-card:hover {
+  border-color: rgba(200, 245, 88, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65), 0 0 25px rgba(200, 245, 88, 0.1);
+}
+
+.ak-monogram-symbol {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.25rem auto;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(200, 245, 88, 0.15) 0%, rgba(26, 29, 38, 0.95) 100%);
+  border: 2px solid var(--devix-lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--devix-lime);
+  letter-spacing: -0.04em;
+  box-shadow: 0 10px 30px rgba(200, 245, 88, 0.22);
+}
+
+.live-clock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #a7f3d0;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  margin: 0.5rem 0 1.25rem 0;
+}
+
+.hero-quick-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+  margin-bottom: 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.hero-quick-pill:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(200, 245, 88, 0.3);
+  transform: translateX(3px);
+}
+
+.hero-quick-pill i {
+  color: var(--devix-lime);
+  font-size: 1.1rem;
+  width: 20px;
+}
+
+.hero-quick-pill .qp-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.hero-quick-pill .qp-desc {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ==========================================================================
+   STATUS BADGE
+   ========================================================================== */
+.devix-status-badge {
+,.Devix-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--devix-lime);
+  background: rgba(200, 245, 88, 0.08);
+  border: 1px solid rgba(200, 245, 88, 0.25);
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.pulse-beacon-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--devix-lime);
+  box-shadow: 0 0 10px var(--devix-lime);
+  animation: pulseBeacon 2s infinite ease-out;
+}
+
+@keyframes pulseBeacon {
+  0% { transform: scale(0.8); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.5; }
+  100% { transform: scale(0.8); opacity: 1; }
+}
+
+/* ==========================================================================
+   HERO ACTIONS & PROFILES
+   ========================================================================== */
+.hero-profiles-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.hero-profile-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hero-profile-pill:hover {
+  color: var(--devix-lime);
+  border-color: rgba(200, 245, 88, 0.4);
+  background: rgba(200, 245, 88, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   INFINITE MARQUEE TICKER
+   ========================================================================== */
+.devix-marquee-strip {
+,.Devix-marquee-strip {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #090a0f;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.devix-marquee-inner {
+,.Devix-marquee-inner {
+  display: inline-flex;
+  gap: 3rem;
+  animation: marqueeLinear 28s linear infinite;
+}
+
+.devix-marquee-text {
+,.Devix-marquee-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.devix-marquee-text .dot {
+,.Devix-marquee-text .dot {
+  color: var(--devix-lime);
+  font-size: 1.2rem;
+}
+
+@keyframes marqueeLinear {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.devix-marquee-strip:hover .devix-marquee-inner {
+,.Devix-marquee-strip:hover .Devix-marquee-inner {
+  animation-play-state: paused;
+}
+
+/* ==========================================================================
+   HIGH CONTRAST EDITORIAL SECTIONS
+   ========================================================================== */
+.section-editorial-dark {
+  background-color: #12141a;
+  color: #cbd5e1;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-editorial-dark h1,
+.section-editorial-dark h2,
+.section-editorial-dark h3,
+.section-editorial-dark h4 {
+  color: #ffffff;
+}
+
+.section-editorial-light {
+  background-color: #f8fafc;
+  color: #475569;
+  position: relative;
+  border-top: 1px solid rgba(18, 20, 26, 0.08);
+  border-bottom: 1px solid rgba(18, 20, 26, 0.08);
+}
+
+.section-editorial-light h1,
+.section-editorial-light h2,
+.section-editorial-light h3,
+.section-editorial-light h4 {
+  color: #12141a;
+}
+
+/* ==========================================================================
+   PROJECT SHOWCASE CARDS
+   ========================================================================== */
+.devix-project-card {
+,.Devix-project-card {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  margin-bottom: 2.25rem;
+}
+
+.devix-project-card:hover {
+,.Devix-project-card:hover {
+  border-color: rgba(200, 245, 88, 0.45);
+  transform: translateY(-5px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Ensure all target="_blank" buttons are 100% clickable with zero layer blocking */
+a[target="_blank"] {
+  position: relative !important;
+  z-index: 999 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+a[target="_blank"]::before,
+a[target="_blank"]::after {
+  pointer-events: none !important;
+}
+
+.project-thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  background: #0f1118 !important;
+  padding: 14px !important;
+  border-radius: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.project-thumbnail-wrapper img,
+.devix-project-card img {
+,.Devix-project-card img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+  border-radius: 10px !important;
+  display: block !important;
+  transition: transform 0.4s ease;
+}
+
+.devix-project-card:hover .project-thumbnail-wrapper img {
+,.Devix-project-card:hover .project-thumbnail-wrapper img {
+  transform: scale(1.02);
+}
+
+.project-category-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(18, 20, 26, 0.9);
+  backdrop-filter: blur(8px);
+  color: var(--devix-lime);
+  border: 1px solid rgba(200, 245, 88, 0.3);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  z-index: 5;
+}
+
+.project-body-content {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-client-flag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0284c7;
+  margin-bottom: 0.4rem;
+}
+
+/* ==========================================================================
+   SERVICES & UI MOCKUP HEADERS
+   ========================================================================== */
+.devix-service-card {
+,.Devix-service-card {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.devix-service-card:hover {
+,.Devix-service-card:hover {
+  border-color: rgba(200, 245, 88, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.service-mockup-top {
+  background: #090a0f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 1.4rem;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mockup-dots {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.25rem;
+  display: flex;
+  gap: 5px;
+}
+
+.mockup-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.mockup-dots span:nth-child(1) { background: #ef4444; }
+.mockup-dots span:nth-child(2) { background: #f59e0b; }
+.mockup-dots span:nth-child(3) { background: #10b981; }
+
+.mockup-code-syntax {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  line-height: 1.55;
+  color: #94a3b8;
+  margin-top: 1rem;
+}
+
+.mockup-code-syntax .kw { color: #f43f5e; font-weight: 600; }
+.mockup-code-syntax .fn { color: #38bdf8; }
+.mockup-code-syntax .vr { color: var(--devix-lime); }
+.mockup-code-syntax .st { color: #a7f3d0; }
+
+.service-card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-card-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--devix-lime);
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   4-STEP WORK PROCESS
+   ========================================================================== */
+.devix-process-card {
+,.Devix-process-card {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.devix-process-card:hover {
+,.Devix-process-card:hover {
+  border-color: rgba(200, 245, 88, 0.4);
+  transform: translateY(-4px);
+}
+
+.process-step-digit {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--devix-lime);
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================================================
+   CONTACT FORM & PROFILES
+   ========================================================================== */
+.devix-profile-box {
+,.Devix-profile-box {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.devix-profile-box:hover {
+,.Devix-profile-box:hover {
+  border-color: rgba(200, 245, 88, 0.6);
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.devix-form-card {
+,.Devix-form-card {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  border-radius: 22px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.pill-option-btn {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.pill-option-btn.active {
+  background: rgba(200, 245, 88, 0.18);
+  border-color: var(--devix-lime);
+  color: #12141a;
+  font-weight: 700;
+}
+
+.devix-input {
+,.Devix-input {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.85rem 1.15rem;
+  color: #12141a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.devix-input:focus {
+,.Devix-input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 15px rgba(2, 132, 199, 0.15);
+}
+
+/* ==========================================================================
+   GLOBAL FOOTER
+   ========================================================================== */
+.devix-site-footer {
+,.Devix-site-footer {
+  background: #090a0f;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 5rem 0 2.5rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.devix-site-footer a {
+,.Devix-site-footer a {
+  text-decoration: none;
+}
+
+.devix-footer-logo {
+,.Devix-footer-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.devix-footer-nav-title {
+,.Devix-footer-nav-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
+}
+
+.devix-footer-list {
+,.Devix-footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0;
+}
+
+.devix-footer-list a {
+,.Devix-footer-list a {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.devix-footer-list a:hover {
+,.Devix-footer-list a:hover {
+  color: var(--devix-lime);
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   devix TIMELINE STYLES (Experience & Education)
+   ========================================================================== */
+.agency-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.agency-timeline::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--devix-lime), rgba(255, 255, 255, 0.15));
+}
+
+.section-editorial-light .agency-timeline::before {
+  background: linear-gradient(to bottom, #0284c7, rgba(18, 20, 26, 0.15));
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-bullet {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #12141a;
+  border: 2px solid var(--devix-lime);
+  box-shadow: 0 0 10px rgba(200, 245, 88, 0.6);
+}
+
+.section-editorial-light .timeline-bullet {
+  background: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 0 10px rgba(2, 132, 199, 0.4);
+}
+
+.timeline-entry-card {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  transition: all 0.25s ease;
+}
+
+.section-editorial-light .timeline-entry-card {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-entry-card:hover {
+  border-color: rgba(200, 245, 88, 0.4);
+  transform: translateX(4px);
+}
+
+.section-editorial-light .timeline-entry-card:hover {
+  border-color: rgba(2, 132, 199, 0.4);
+}
+
+/* ==========================================================================
+   devix SKILLS MATRIX & INTERACTIVE CHIPS
+   ========================================================================== */
+.skills-matrix-card {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.25s ease;
+}
+
+.skills-matrix-card:hover {
+  border-color: rgba(200, 245, 88, 0.35);
+  transform: translateY(-3px);
+}
+
+.section-editorial-light .skills-matrix-card {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.skills-matrix-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.skills-interactive-chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  user-select: none;
+}
+
+.skills-interactive-chip:hover {
+  background: rgba(200, 245, 88, 0.12);
+  color: var(--devix-lime);
+  border-color: rgba(200, 245, 88, 0.4);
+  transform: translateY(-2px);
+}
+
+.section-editorial-light .skills-interactive-chip {
+  color: #334155;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.section-editorial-light .skills-interactive-chip:hover {
+  background: rgba(2, 132, 199, 0.08);
+  color: #0284c7;
+  border-color: rgba(2, 132, 199, 0.3);
+}
+
+/* Tag Pills */
+.tag-pill-light {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tag-pill-dark {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ==========================================================================
+   devix FAQ ACCORDION
+   ========================================================================== */
+.devix-faq-card,.Devix-faq-card,
+.faq-accordion-item {
+  background: #1a1d26;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.devix-faq-card:hover,.Devix-faq-card:hover,
+.faq-accordion-item:hover {
+  border-color: rgba(200, 245, 88, 0.3);
+}
+
+.devix-faq-card.active,.Devix-faq-card.active,
+.faq-accordion-item.active {
+  border-color: rgba(200, 245, 88, 0.5);
+  background: #1f232e;
+}
+
+.section-editorial-light .devix-faq-card,.section-editorial-light .Devix-faq-card,
+.section-editorial-light .faq-accordion-item {
+  background: #ffffff;
+  border-color: rgba(18, 20, 26, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.section-editorial-light .devix-faq-card.active,.section-editorial-light .Devix-faq-card.active,
+.section-editorial-light .faq-accordion-item.active {
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.08);
+}
+
+.devix-faq-btn,.Devix-faq-btn,
+.faq-header-btn {
+  width: 100%;
+  padding: 1.35rem 1.75rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.section-editorial-light .devix-faq-btn,.section-editorial-light .Devix-faq-btn,
+.section-editorial-light .faq-header-btn {
+  color: #12141a;
+}
+
+.devix-faq-btn:hover,.Devix-faq-btn:hover,
+.faq-header-btn:hover {
+  color: var(--devix-lime);
+}
+
+.section-editorial-light .devix-faq-btn:hover,.section-editorial-light .Devix-faq-btn:hover,
+.section-editorial-light .faq-header-btn:hover {
+  color: #0284c7;
+}
+
+.devix-faq-btn .faq-icon,.Devix-faq-btn .faq-icon,
+.faq-header-btn .faq-icon {
+  font-size: 0.95rem;
+  color: var(--devix-lime);
+  transition: transform 0.3s ease;
+}
+
+.section-editorial-light .devix-faq-btn .faq-icon,.section-editorial-light .Devix-faq-btn .faq-icon,
+.section-editorial-light .faq-header-btn .faq-icon {
+  color: #0284c7;
+}
+
+.devix-faq-card.active .faq-icon,.Devix-faq-card.active .faq-icon,
+.faq-accordion-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.devix-faq-answer,.Devix-faq-answer,
+.faq-body-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 1.75rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.96rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.section-editorial-light .devix-faq-answer,.section-editorial-light .Devix-faq-answer,
+.section-editorial-light .faq-body-content {
+  color: #475569;
+}
+
+.devix-faq-card.active .devix-faq-answer,.Devix-faq-card.active .Devix-faq-answer,
+.faq-accordion-item.active .faq-body-content {
+  max-height: 500px;
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  display: block;
+}
+
+/* ==========================================================================
+   CONTACT SPECIFIC STYLES
+   ========================================================================== */
+.contact-profile-box {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.contact-profile-box:hover {
+  border-color: rgba(200, 245, 88, 0.6);
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-wrapper {
+  background: #ffffff;
+  border: 1px solid rgba(18, 20, 26, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.form-control-devix {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 0.85rem 1.15rem;
+  color: #12141a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-control-devix:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 15px rgba(2, 132, 199, 0.15);
+  background: #ffffff;
+}
+
+.form-control-devix.is-invalid {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+/* Pulse badge & Buttons */
+.badge-devix-pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-devix-lime {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: var(--devix-lime);
+  color: #12141a;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 20px rgba(200, 245, 88, 0.25);
+}
+
+.btn-devix-lime:hover {
+  background: #b8e645;
+  color: #12141a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(200, 245, 88, 0.4);
+}
+
+.btn-devix-outline-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-devix-outline-dark:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   FONTAWESOME ICON VISIBILITY FIX (All Buttons & Elements)
+   ========================================================================== */
+
+/* Force all FontAwesome icons inside .theme-btn to be visible and properly sized */
+.theme-btn i,
+.theme-btn .fa-solid,
+.theme-btn .fa-regular,
+.theme-btn .fa-light,
+.theme-btn .fa-thin,
+.theme-btn .fa-duotone,
+.theme-btn .fa-brands {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  vertical-align: middle !important;
+  margin-left: 8px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Ensure correct font-family for each FA weight */
+.theme-btn .fa-solid,
+.theme-btn .fa-regular,
+.theme-btn .fa-light,
+.theme-btn .fa-thin,
+.theme-btn .fa-duotone {
+  font-family: "Font Awesome 6 Pro" !important;
+}
+
+.theme-btn .fa-brands {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+
+/* Back-to-top button (Bottom Purple Circular Button) */
+.back-to-top {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-color: var(--theme2, #6805F1) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(104, 5, 241, 0.45) !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  position: fixed !important;
+  right: 30px !important;
+  bottom: 30px !important;
+  z-index: 9999 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.back-to-top:hover {
+  background-color: #5504c7 !important;
+  box-shadow: 0 6px 24px rgba(104, 5, 241, 0.6) !important;
+  transform: translateY(-4px) !important;
+}
+
+.back-to-top svg {
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  stroke: #ffffff !important;
+  stroke-width: 2.5 !important;
+  fill: none !important;
+  margin: 0 auto !important;
+  transition: transform 0.25s ease !important;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-3px) !important;
+}
+
+/* Inline SVG icon styling for all action buttons */
+.theme-btn svg,
+.btn-devix-lime svg,
+.btn-devix-lime svg,
+.btn-devix-lime svg,
+.devix-btn-download svg,.Devix-btn-download svg,
+.devix-btn-download svg,.Devix-btn-download svg,
+.devix-btn-download svg,.Devix-btn-download svg,
+.contact-profile-box svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.theme-btn:hover svg,
+.btn-devix-lime:hover svg,
+.btn-devix-lime:hover svg,
+.btn-devix-lime:hover svg,
+.devix-btn-download:hover svg,.Devix-btn-download:hover svg,
+.devix-btn-download:hover svg,.Devix-btn-download:hover svg,
+.devix-btn-download:hover svg {
+,.Devix-btn-download:hover svg {
+  transform: translate(2px, -2px) !important;
+}
+
+.contact-profile-box:hover svg {
+  transform: translate(2px, -2px) !important;
+}
+
+.back-to-top i,
+.back-to-top .fa-solid,
+.back-to-top .fa-regular,
+.back-to-top .fa-light {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-style: normal !important;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-size: 18px !important;
+  line-height: 50px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Icons inside custom devix buttons */
+.btn-devix-lime i,
+.btn-devix-outline-dark i,
+.devix-btn-download i,.Devix-btn-download i,
+.hero-profile-pill i,
+.hero-quick-pill i,
+.devix-profile-box i,.Devix-profile-box i,
+.contact-profile-box i,
+.devix-nav-link i,.Devix-nav-link i,
+.skills-interactive-chip i,
+.skills-matrix-title i,
+.tag-pill-light i,
+.tag-pill-dark i {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  vertical-align: middle !important;
+}
+
+/* Ensure FA font-families load for all icon weight classes globally */
+.fa-solid,
+.fa-regular,
+.fa-light,
+.fa-thin,
+.fa-duotone {
+  font-family: "Font Awesome 6 Pro" !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-brands {
+  font-family: "Font Awesome 6 Brands" !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fix .theme-btn overflow clipping icons — keep the ::before animation but stop it from hiding <i> tags */
+.theme-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  padding: 18px 40px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 575px) {
+  .theme-btn {
+    padding: 14px 22px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Override for project action buttons that already have inline padding */
+.theme-btn[style*="padding: 10px"] {
+  padding: 10px 22px !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+}
+

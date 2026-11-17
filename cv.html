@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYAN KUMAR — Executive CV / Resume | Full Stack Web &amp; E-Commerce Developer</title>
+    <meta name="description" content="Executive CV / Resume of ARYAN KUMAR — Full Stack Web Developer and Shopify Specialist based in Karachi, Pakistan.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='56' fill='%23c8f558' text-anchor='middle'>A.</text></svg>">
+
+    <!-- Fonts: Plus Jakarta Sans, Space Grotesk, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy-bg: #0b0d12;
+            --navy-surface: #13161f;
+            --navy-border: #1f2433;
+            --lime-accent: #c8f558;
+            --gold-accent: #fbbf24;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --text-light: #f8fafc;
+            --sidebar-width: 295px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.45;
+            -webkit-font-smoothing: antialiased;
+            padding: 2rem 1rem;
+        }
+
+        /* Top Action Bar (Screen Only) */
+        .cv-action-bar {
+            max-width: 980px;
+            margin: 0 auto 1.25rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 0.85rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .cv-action-bar a,
+        .cv-action-bar button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 0.5rem 1.15rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn-print {
+            background: var(--navy-bg);
+            color: #ffffff;
+            border: 1px solid var(--navy-bg);
+        }
+        .btn-print:hover {
+            background: #1e293b;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+        }
+        .btn-link-sec {
+            background: #f1f5f9;
+            color: var(--navy-bg);
+            border: 1px solid #cbd5e1;
+        }
+        .btn-link-sec:hover {
+            background: #e2e8f0;
+        }
+        .btn-download-pdf {
+            background: #16a34a;
+            color: #ffffff;
+            border: 1px solid #16a34a;
+        }
+        .btn-download-pdf:hover {
+            background: #15803d;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.25);
+        }
+
+        /* CV Sheet (A4 Dimensions) */
+        .cv-sheet {
+            max-width: 980px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: var(--sidebar-width) 1fr;
+            min-height: 1120px;
+        }
+
+        /* Left Column: Dark Charcoal Sidebar */
+        .cv-sidebar {
+            background: var(--navy-bg);
+            color: var(--text-light);
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.35rem;
+            border-right: 1px solid var(--navy-border);
+        }
+
+        .avatar-monogram {
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(200, 245, 88, 0.22), rgba(19, 22, 31, 0.95));
+            border: 2px solid var(--lime-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.95rem;
+            font-weight: 800;
+            color: var(--lime-accent);
+            margin-bottom: 0.65rem;
+            box-shadow: 0 4px 15px rgba(200, 245, 88, 0.2);
+        }
+
+        .sidebar-section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--lime-accent);
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            margin-bottom: 0.65rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.45rem;
+            font-size: 0.8rem;
+            color: #cbd5e1;
+        }
+
+        .sidebar-item-label {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sidebar-link {
+            color: #f8fafc;
+            text-decoration: none;
+            transition: color 0.15s ease;
+            word-break: break-all;
+        }
+        .sidebar-link:hover {
+            color: var(--lime-accent);
+        }
+
+        .skills-group {
+            margin-bottom: 0.65rem;
+        }
+        .skills-group:last-child {
+            margin-bottom: 0;
+        }
+        .skills-group-title {
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 0.25rem;
+        }
+        .skill-tags-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+        .cv-skill-pill {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.66rem;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+        }
+
+        /* Right Column: Clean White Main Content */
+        .cv-main {
+            padding: 2.25rem 2.25rem;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            gap: 1.35rem;
+        }
+
+        .header-title-block {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.85rem;
+        }
+        .cv-candidate-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: var(--navy-bg);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+        .cv-candidate-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #0284c7;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 0.2rem;
+        }
+
+        .section-header {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--navy-bg);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding-bottom: 0.3rem;
+            border-bottom: 1.5px solid #cbd5e1;
+            margin-bottom: 0.65rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .summary-text {
+            font-size: 0.84rem;
+            color: var(--text-body);
+            line-height: 1.5;
+        }
+
+        /* Experience Timeline Entries */
+        .cv-timeline-entry {
+            margin-bottom: 0.75rem;
+        }
+        .cv-timeline-entry:last-child {
+            margin-bottom: 0;
+        }
+        .entry-top-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.15rem;
+        }
+        .entry-role-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--navy-bg);
+            letter-spacing: -0.01em;
+        }
+        .entry-date-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            font-weight: 600;
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.12rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+        }
+        .entry-company-sub {
+            font-size: 0.8rem;
+            color: #0284c7;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        .entry-bullet-list {
+            padding-left: 1.15rem;
+            font-size: 0.81rem;
+            color: var(--text-body);
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            line-height: 1.4;
+        }
+
+        /* Project Cards in Resume */
+        .project-cv-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 3px solid var(--navy-bg);
+            border-radius: 6px;
+            padding: 0.65rem 0.85rem;
+            margin-bottom: 0.6rem;
+        }
+        .project-cv-item:last-child {
+            margin-bottom: 0;
+        }
+        .project-cv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.15rem;
+        }
+        .project-cv-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--navy-bg);
+            letter-spacing: -0.01em;
+        }
+        .project-cv-links {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            display: flex;
+            gap: 0.65rem;
+        }
+        .project-cv-links a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .project-cv-links a:hover {
+            text-decoration: underline;
+        }
+        .project-cv-tech {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            color: #475569;
+            margin-bottom: 0.2rem;
+        }
+        .project-cv-desc {
+            font-size: 0.80rem;
+            color: var(--text-body);
+            line-height: 1.4;
+        }
+
+        /* Print Media Styles: Guaranteed 1-Page A4 Fit */
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+            html, body {
+                width: 210mm !important;
+                height: 297mm !important;
+                max-height: 297mm !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: #ffffff !important;
+                overflow: hidden !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .cv-action-bar {
+                display: none !important;
+            }
+            .cv-sheet {
+                margin-top: 0 !important;
+            }
+            .cv-sheet {
+                box-shadow: none !important;
+                border: none !important;
+                border-radius: 0 !important;
+                width: 210mm !important;
+                height: 297mm !important;
+                max-height: 297mm !important;
+                min-height: 297mm !important;
+                margin: 0 !important;
+                overflow: hidden !important;
+                grid-template-columns: 240px 1fr !important;
+                page-break-after: avoid !important;
+                page-break-inside: avoid !important;
+            }
+            .cv-sidebar {
+                padding: 14px 12px !important;
+                gap: 10px !important;
+            }
+            .avatar-monogram {
+                width: 58px !important;
+                height: 58px !important;
+                font-size: 1.55rem !important;
+                margin-bottom: 0.35rem !important;
+            }
+            .cv-sidebar h2 {
+                font-size: 1.15rem !important;
+            }
+            .sidebar-section-title {
+                font-size: 0.68rem !important;
+                padding-bottom: 0.15rem !important;
+                margin-bottom: 0.35rem !important;
+            }
+            .sidebar-list {
+                gap: 0.3rem !important;
+                font-size: 0.70rem !important;
+            }
+            .skills-group {
+                margin-bottom: 0.35rem !important;
+            }
+            .skills-group-title {
+                font-size: 0.65rem !important;
+                margin-bottom: 0.15rem !important;
+            }
+            .cv-skill-pill {
+                font-size: 0.58rem !important;
+                padding: 0.08rem 0.35rem !important;
+            }
+            .cv-main {
+                padding: 16px 18px !important;
+                gap: 9px !important;
+            }
+            .header-title-block {
+                padding-bottom: 0.4rem !important;
+            }
+            .cv-candidate-name {
+                font-size: 1.7rem !important;
+            }
+            .cv-candidate-title {
+                font-size: 0.76rem !important;
+                margin-top: 0.1rem !important;
+            }
+            .section-header {
+                font-size: 0.82rem !important;
+                padding-bottom: 0.15rem !important;
+                margin-bottom: 0.35rem !important;
+            }
+            .summary-text {
+                font-size: 0.75rem !important;
+                line-height: 1.34 !important;
+            }
+            .cv-timeline-entry {
+                margin-bottom: 0.4rem !important;
+            }
+            .entry-role-title {
+                font-size: 0.82rem !important;
+            }
+            .entry-date-badge {
+                font-size: 0.64rem !important;
+                padding: 0.08rem 0.35rem !important;
+            }
+            .entry-company-sub {
+                font-size: 0.72rem !important;
+                margin-bottom: 0.15rem !important;
+            }
+            .entry-bullet-list {
+                font-size: 0.73rem !important;
+                gap: 0.12rem !important;
+                line-height: 1.32 !important;
+            }
+            .project-cv-item {
+                padding: 0.4rem 0.65rem !important;
+                margin-bottom: 0.35rem !important;
+            }
+            .project-cv-name {
+                font-size: 0.80rem !important;
+            }
+            .project-cv-links {
+                font-size: 0.64rem !important;
+            }
+            .project-cv-tech {
+                font-size: 0.64rem !important;
+                margin-bottom: 0.12rem !important;
+            }
+            .project-cv-desc {
+                font-size: 0.72rem !important;
+                line-height: 1.3 !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cv-sheet {
+                grid-template-columns: 1fr;
+            }
+            .cv-action-bar {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Action Bar (Hidden in Print) -->
+    <header class="cv-action-bar" style="position: fixed; top: 18px; z-index: 9999; opacity: 1; visibility: visible; left: 50%; transform: translateX(-50%); width: calc(100% - 2rem); max-width: 980px;">
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+            <strong style="font-family: 'Space Grotesk', sans-serif; font-size: 1rem; color: #0f172a;">ARYAN KUMAR &bull; Executive CV</strong>
+            <span style="font-size: 0.78rem; color: #64748b; background: #f1f5f9; padding: 0.2rem 0.5rem; border-radius: 4px;">A4 Executive Sheet</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center;">
+            <a href="index.html" class="btn-link-sec">
+                <span>&larr; Back to Portfolio</span>
+            </a>
+            <a href="cover-letter.html" class="btn-link-sec">
+                <span>View Cover Letter &rarr;</span>
+            </a>
+            <a href="./Aryan_Kumar_CV_Resume.pdf" download="Aryan_Kumar_CV_Resume.pdf" class="btn-download-pdf">
+                <span>Download CV (PDF)</span>
+            </a>
+            <button type="button" class="btn-print" onclick="window.print()">
+                <span>Print / Save PDF</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main CV Sheet -->
+    <main class="cv-sheet" style="margin-top: 5rem;">
+        
+        <!-- ==========================================================================
+             LEFT COLUMN: DARK CHARCOAL SIDEBAR
+             ========================================================================== -->
+        <aside class="cv-sidebar">
+            
+            <!-- AK Monogram & Header -->
+            <div>
+                <div class="avatar-monogram">
+                    AK
+                </div>
+                <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; line-height: 1.15; letter-spacing: -0.02em;">
+                    ARYAN KUMAR
+                </h2>
+                <div style="font-size: 0.78rem; color: var(--lime-accent); font-weight: 700; margin-top: 0.2rem; font-family: 'Space Grotesk', sans-serif;">
+                    Full Stack Web &amp; Shopify Developer
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <div class="sidebar-section-title">Contact Information</div>
+                <ul class="sidebar-list">
+                    <li>
+                        <span class="sidebar-item-label">Location</span>
+                        <span>Karachi, Sindh, Pakistan</span>
+                    </li>
+                    <li>
+                        <span class="sidebar-item-label">Direct Channel</span>
+                        <span style="color: #cbd5e1; font-size: 0.78rem;">LinkedIn / Upwork / Freelancer</span>
+                    </li>
+                    <li>
+                        <span class="sidebar-item-label">Status</span>
+                        <span style="color: var(--lime-accent); font-weight: 600;">Available for Remote &amp; Contracts</span>
+                    </li>
+                    <li>
+                        <span class="sidebar-item-label">Timezone</span>
+                        <span>PKT (UTC+05:00)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Verified Profiles -->
+            <div>
+                <div class="sidebar-section-title">Verified Profiles</div>
+                <ul class="sidebar-list">
+                    <li>
+                        <span class="sidebar-item-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/aryan-kumar-99681443a/" target="_blank" rel="noopener noreferrer" class="sidebar-link">aryan-kumar-99681443a</a>
+                    </li>
+                    <li>
+                        <span class="sidebar-item-label">Upwork</span>
+                        <a href="https://www.upwork.com/freelancers/~01c5ace242e3d3f9a1?viewMode=1" target="_blank" rel="noopener noreferrer" class="sidebar-link">ARYAN KUMAR (Upwork)</a>
+                    </li>
+                    <li>
+                        <span class="sidebar-item-label">Freelancer</span>
+                        <a href="https://www.freelancer.com/u/aryankumardev" target="_blank" rel="noopener noreferrer" class="sidebar-link">aryankumardev</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Categorized Technical Competencies -->
+            <div>
+                <div class="sidebar-section-title">Technical Expertise</div>
+                
+                <div class="skills-group">
+                    <div class="skills-group-title">Front-End &amp; UI</div>
+                    <div class="skill-tags-cloud">
+                        <span class="cv-skill-pill">HTML5</span>
+                        <span class="cv-skill-pill">CSS3</span>
+                        <span class="cv-skill-pill">JavaScript ES6+</span>
+                        <span class="cv-skill-pill">Bootstrap 5</span>
+                        <span class="cv-skill-pill">jQuery</span>
+                        <span class="cv-skill-pill">Responsive UI</span>
+                        <span class="cv-skill-pill">Figma UI/UX</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-group-title">Back-End &amp; Databases</div>
+                    <div class="skill-tags-cloud">
+                        <span class="cv-skill-pill">Core PHP 8</span>
+                        <span class="cv-skill-pill">MySQL 3NF</span>
+                        <span class="cv-skill-pill">Web APIs</span>
+                        <span class="cv-skill-pill">Laravel (Starting)</span>
+                        <span class="cv-skill-pill">JSON</span>
+                        <span class="cv-skill-pill">XML / XSL</span>
+                        <span class="cv-skill-pill">E-R Modeling</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-group-title">E-Commerce &amp; Tooling</div>
+                    <div class="skill-tags-cloud">
+                        <span class="cv-skill-pill">Shopify Setup</span>
+                        <span class="cv-skill-pill">Product Catalog Mgmt</span>
+                        <span class="cv-skill-pill">WordPress</span>
+                        <span class="cv-skill-pill">Web Hosting</span>
+                        <span class="cv-skill-pill">Git / GitHub</span>
+                        <span class="cv-skill-pill">Technical SEO</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline in Sidebar -->
+            <div>
+                <div class="sidebar-section-title">Education &amp; Honors</div>
+                
+                <div style="margin-bottom: 0.65rem;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #ffffff;">
+                        3-Year IT ACCP AI Diploma
+                    </div>
+                    <div style="font-size: 0.74rem; color: var(--lime-accent);">
+                        Aptech Computer Education, Karachi
+                    </div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #94a3b8;">
+                        2025 &ndash; Present (Completed 1st Year)
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 0.65rem;">
+                    <div style="font-size: 0.8rem; font-weight: 700; color: #ffffff;">
+                        Intermediate (12th Class) &mdash; CS
+                    </div>
+                    <div style="font-size: 0.74rem; color: #38bdf8;">
+                        Higher Secondary Board, Karachi
+                    </div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #94a3b8;">
+                        2025 &ndash; Present
+                    </div>
+                </div>
+
+                <div>
+                    <div style="font-size: 0.8rem; font-weight: 700; color: var(--gold-accent);">
+                        1st Position Holder (Matric CS)
+                    </div>
+                    <div style="font-size: 0.74rem; color: #f1f5f9;">
+                        Woodland Secondary School, North Karachi
+                    </div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #94a3b8;">
+                        Near Power House 11-A &bull; Graduated #1
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ==========================================================================
+             RIGHT COLUMN: CRISP EXECUTIVE CONTENT
+             ========================================================================== -->
+        <section class="cv-main">
+            
+            <!-- Candidate Header -->
+            <div class="header-title-block">
+                <h1 class="cv-candidate-name">ARYAN KUMAR</h1>
+                <div class="cv-candidate-title">Full Stack Web Developer &bull; Shopify Store Specialist</div>
+            </div>
+
+            <!-- Executive Summary -->
+            <div>
+                <div class="section-header">Executive Profile</div>
+                <p class="summary-text">
+                    Versatile 17-year-old Full Stack Web &amp; E-Commerce Developer based in Karachi, Pakistan, pursuing a 3-Year IT ACCP AI Diploma at Aptech and Intermediate in Computer Science. Graduated as <strong>1st Position Holder among Boys</strong> at Woodland Secondary School. Specialized in architecting dynamic Core PHP &amp; MySQL databases, engineering performant responsive frontends (HTML5/CSS3/JavaScript), designing high-converting Shopify &amp; WordPress stores with complete product setup, and deploying production-grade digital products.
+                </p>
+            </div>
+
+            <!-- Work Experience -->
+            <div>
+                <div class="section-header">Professional Experience</div>
+                
+                <div class="cv-timeline-entry">
+                    <div class="entry-top-line">
+                        <span class="entry-role-title">Freelance Web &amp; E-Commerce Developer</span>
+                        <span class="entry-date-badge">2025 &ndash; PRESENT</span>
+                    </div>
+                    <div class="entry-company-sub">Self-Employed &bull; Remote Client Deliveries</div>
+                    <ul class="entry-bullet-list">
+                        <li>Designed, launched, and optimized Shopify and WordPress e-commerce storefronts (free/modern themes), configuring product catalog setups and streamlined customer checkouts.</li>
+                        <li>Architected custom relational web backends in Core PHP and MySQL with normalized 3NF schemas, password encryption, and custom admin portals.</li>
+                        <li>Engineered pixel-perfect, mobile-first responsive frontends using modern JavaScript (ES6+), HTML5, CSS3, jQuery, and Bootstrap 5.</li>
+                        <li>Configured commercial web hosting environments, SSL security, domain mapping, technical SEO audits, and Git/GitHub version control workflows.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Featured Production Projects -->
+            <div>
+                <div class="section-header">
+                    <span>Featured Production Projects</span>
+                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.70rem; color: #64748b; font-weight: 500; text-transform: none;">All Live &amp; Verified</span>
+                </div>
+
+                <!-- PROJECT 01 -->
+                <div class="project-cv-item">
+                    <div class="project-cv-header">
+                        <span class="project-cv-name">1. VEBRA &mdash; Music &amp; E-Commerce Web Application</span>
+                        <div class="project-cv-links">
+                            <a href="https://great-site.net" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+                            <a href="https://github.com/Vebra-sound" target="_blank" rel="noopener noreferrer">Source Code &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-cv-tech">Tech: Core PHP, MySQL, JavaScript, Bootstrap, PHPMailer</div>
+                    <div class="project-cv-desc">
+                        Full-stack music streaming and vinyl e-commerce web application featuring user authentication, dynamic artist/song database, shopping cart, and custom Admin Dashboard.
+                    </div>
+                </div>
+
+                <!-- PROJECT 02 -->
+                <div class="project-cv-item">
+                    <div class="project-cv-header">
+                        <span class="project-cv-name">2. FurEver Care &mdash; Pet Wellness &amp; Veterinary Portal</span>
+                        <div class="project-cv-links">
+                            <a href="https://vercel.app" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+                            <a href="https://github.com/FurEver" target="_blank" rel="noopener noreferrer">Source Code &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-cv-tech">Tech: HTML5, CSS3, Vanilla JavaScript, JSON, LocalStorage</div>
+                    <div class="project-cv-desc">
+                        Interactive pet care platform built with Vanilla JavaScript and JSON data schemas featuring a Personalized Pet Owner Journey, Companion Health Journal with LocalStorage, Feeding Portion Calculator, and 24/7 Emergency Triage guide.
+                    </div>
+                </div>
+
+                <!-- PROJECT 03 -->
+                <div class="project-cv-item">
+                    <div class="project-cv-header">
+                        <span class="project-cv-name">3. Excellent Coaching &mdash; Multi-Page Learning Platform</span>
+                        <div class="project-cv-links">
+                            <a href="https://github.io" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+                            <a href="https://github.com/Excellent_Coaching" target="_blank" rel="noopener noreferrer">Source Code &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="project-cv-tech">Tech: HTML5, CSS3, Bootstrap, jQuery</div>
+                    <div class="project-cv-desc">
+                        Responsive multi-page educational website with course categories, instructor profiles, student testimonials, and interactive sliders.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Distinction Callout -->
+            <div style="background: #fdfbf7; border: 1px solid #fde68a; border-left: 3px solid #f59e0b; border-radius: 6px; padding: 0.65rem 0.95rem;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <strong style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.86rem; color: #92400e;">
+                        Academic Distinction &bull; 1st Position Holder
+                    </strong>
+                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #b45309; font-weight: 600;">
+                        Woodland Secondary School
+                    </span>
+                </div>
+                <div style="font-size: 0.78rem; color: #78350f; line-height: 1.4; margin-top: 0.15rem;">
+                    Awarded 1st Position among Boys in class for excellence in Science and Computer Science curriculum. Recognized for outstanding computational logic and academic merit.
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

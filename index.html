@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Aryan Kumar">
+    <meta name="description" content="Portfolio of Aryan Kumar — 17-year-old Full Stack Web & E-Commerce Developer based in Karachi, Pakistan. Building PHP & MySQL web apps, HTML5/CSS3/JS websites, and Shopify & WordPress stores.">
+    
+    <title>Aryan. &mdash; Web &amp; E-Commerce Developer | Aryan Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2312141a'/><text x='50%' y='68%' font-family='sans-serif' font-weight='900' font-size='56' fill='%23c8f558' text-anchor='middle'>A.</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Devix Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/clean-studio.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Preloader Start -->
+        <div class="preloader">
+            <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+            </svg>
+            <div class="preloader-heading">
+                <div class="load-text">
+                    <span>A</span>
+                    <span>R</span>
+                    <span>Y</span>
+                    <span>A</span>
+                    <span>N</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top Start -->
+        <button id="back-top" class="back-to-top" aria-label="Back to Top">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+
+        <!-- GT MouseCursor Start -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+
+        <!-- ==========================================================================
+             FLOATING GLASS NAVBAR (100% Readable across all sections)
+             ========================================================================== -->
+                <header class="Devix-floating-header" style="position: fixed; top: 18px; left: 50%; transform: translateX(-50%); width: min(92%, 1120px); height: 64px; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; background: rgba(15, 18, 26, 0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; z-index: 9999; box-sizing: border-box;">
+            <nav class="Devix-glass-pill" aria-label="Main Navigation" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between; background: transparent; border: none; padding: 0; box-shadow: none;">
+                <a href="index.html" class="Devix-brand-logo" style="color: #ffffff; font-weight: 700; font-size: 1.3rem; text-decoration: none; display: inline-flex; align-items: center; letter-spacing: -0.03em;">
+                    Aryan<span class="dot" style="color: #c8f558;">.</span>
+                </a>
+                
+                <ul class="Devix-nav-menu" style="display: flex; flex-direction: row; gap: 24px; list-style: none; margin: 0; padding: 0; align-items: center;">
+                    <li><a href="index.html" class="Devix-nav-link active" style="color: #c8f558; font-size: 14px; font-weight: 700; text-decoration: none;">Home</a></li>
+                    <li><a href="work.html" class="Devix-nav-link" style="color: #e2e8f0; font-size: 14px; font-weight: 500; text-decoration: none;">Work</a></li>
+                    <li><a href="services.html" class="Devix-nav-link" style="color: #e2e8f0; font-size: 14px; font-weight: 500; text-decoration: none;">Services</a></li>
+                    <li><a href="experience.html" class="Devix-nav-link" style="color: #e2e8f0; font-size: 14px; font-weight: 500; text-decoration: none;">Experience</a></li>
+                    <li><a href="contact.html" class="Devix-nav-link" style="color: #e2e8f0; font-size: 14px; font-weight: 500; text-decoration: none;">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+                    <a href="cv.html" class="Devix-btn-download" style="background: #c8f558; color: #0b0d12; font-weight: 700; padding: 8px 18px; border-radius: 999px; text-decoration: none; font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; border: none; white-space: nowrap;">
+                        <span>Download CV</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0b0d12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </a>
+                    <button class="Devix-mobile-toggle" aria-label="Toggle Navigation" aria-expanded="false" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #ffffff; width: 40px; height: 40px; border-radius: 50%; align-items: center; justify-content: center; cursor: pointer;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Drawer -->
+        <div class="Devix-mobile-drawer" role="dialog" aria-modal="true" style="display: none !important;">
+            <a href="index.html" class="Devix-nav-link active">Home</a>
+            <a href="work.html" class="Devix-nav-link">Work</a>
+            <a href="services.html" class="Devix-nav-link">Services</a>
+            <a href="experience.html" class="Devix-nav-link">Experience</a>
+            <a href="contact.html" class="Devix-nav-link">Contact</a>
+            <a href="cv.html" class="Devix-btn-download">
+                <span>Download CV (Interactive)</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 4px; display: inline-block; vertical-align: middle;"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </a>
+        </div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- ==========================================================================
+                     FULL-SCREEN HERO SECTION (100vh Fit, Zero Cut-Off, Solid Obsidian Dark)
+                     ========================================================================== -->
+                <section class="hero-section-3 hero-3 fix" style="background: #0b0d12 !important; color: #ffffff !important; min-height: 100vh; display: flex; align-items: center; padding: 96px 5% 40px; box-sizing: border-box; position: relative;">
+                    <div class="hero-shape-1" style="z-index: 0; pointer-events: none; opacity: 0.12;">
+                        <img src="assets/img/home-3/hero-shape-1.png" alt="shape" style="pointer-events: none;">
+                    </div>
+                    <div class="hero-shape-2" style="z-index: 0; pointer-events: none; opacity: 0.12;">
+                        <img src="assets/img/home-3/hero-shape-2.png" alt="shape" style="pointer-events: none;">
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row align-items-center g-4 g-lg-5" style="display: grid; grid-template-columns: 1.55fr 0.75fr; gap: 40px; align-items: center; max-width: 1240px; width: 100%; margin: 0 auto;">
+                            
+                            <!-- Left Column: Headline, Bio & Actions -->
+                            <div class="col-lg-7">
+                                <div class="wow fadeInUp" data-wow-delay=".2s">
+                                    <span class="Devix-status-badge">
+                                        <span class="pulse-beacon-dot"></span>
+                                        Available for Work &bull; Karachi, Pakistan
+                                    </span>
+                                </div>
+
+                                <h1 class="title split-title" style="font-size: clamp(2.3rem, 3.6vw, 3.3rem); font-weight: 800; line-height: 1.12; margin: 1rem 0; color: #ffffff; word-break: normal; overflow-wrap: normal;">
+                                    Web &amp; E-Commerce Developer Building Fast Digital Products.
+                                </h1>
+
+                                <p class="wow fadeInUp" data-wow-delay=".4s" style="font-size: 1.05rem; line-height: 1.6; color: #cbd5e1; max-width: 600px; margin-bottom: 1.5rem; position: relative; z-index: 5;">
+                                    Hi, I'm Aryan Kumar &mdash; a 17-year-old Full Stack Web &amp; E-Commerce Developer and 12th Class Computer Science student in Karachi. Currently in my 2nd year of the 3-Year IT ACCP AI Diploma at Aptech, I build PHP &amp; MySQL web apps, modern JavaScript websites, and Shopify &amp; WordPress stores.
+                                </p>
+
+                                <div class="hero-btn-area wow fadeInUp" data-wow-delay=".5s" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                                    <a href="work.html" class="theme-btn">
+                                        Explore My Work
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                    <a href="contact.html" class="theme-btn style-2">
+                                        Let's Talk
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+
+                                <!-- Direct Verified Profile Links -->
+                                <div class="hero-profiles-row wow fadeInUp" data-wow-delay=".6s" style="position: relative; z-index: 5;">
+                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; color: #64748b; text-transform: uppercase;">Profiles:</span>
+                                    <a href="https://www.linkedin.com/in/aryan-kumar-99681443a/" target="_blank" rel="noopener noreferrer" class="hero-profile-pill">
+                                        <i class="fa-brands fa-linkedin text-lime"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="https://www.upwork.com/freelancers/~01c5ace242e3d3f9a1?viewMode=1" target="_blank" rel="noopener noreferrer" class="hero-profile-pill">
+                                        <i class="fa-solid fa-circle-nodes text-lime"></i>
+                                        <span>Upwork</span>
+                                    </a>
+                                    <a href="https://www.freelancer.com/u/aryankumardev" target="_blank" rel="noopener noreferrer" class="hero-profile-pill">
+                                        <i class="fa-solid fa-laptop-code text-lime"></i>
+                                        <span>Freelancer</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Sleek "AK" Monogram Showcase Card (Zero Personal Photos) -->
+                            <div class="col-lg-5">
+                                <div class="ak-emblem-card wow fadeInUp" data-wow-delay=".3s" style="padding: 22px;">
+                                    <!-- Monogram Symbol Box -->
+                                    <div class="ak-monogram-symbol">
+                                        AK
+                                    </div>
+
+                                    <h2 style="font-size: 1.55rem; font-weight: 800; color: #ffffff; margin-bottom: 0.2rem;">
+                                        Aryan Kumar
+                                    </h2>
+                                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--Devix-lime); font-weight: 600;">
+                                        Karachi, PK &bull; Full-Stack &amp; E-Commerce
+                                    </div>
+
+                                    <!-- Live Karachi PKT Clock -->
+                                    <div class="live-clock-badge">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span id="Devix-pkt-clock">Loading PKT...</span>
+                                    </div>
+
+                                    <!-- 3 Quick Highlight Pills (Core Skills: PHP/MySQL, Shopify/WordPress, HTML/CSS/JS) -->
+                                    <div class="mt-3">
+                                        <div class="hero-quick-pill">
+                                            <i class="fa-solid fa-database"></i>
+                                            <div>
+                                                <div class="qp-title">Core PHP &amp; MySQL</div>
+                                                <div class="qp-desc">Relational 3NF &bull; Session Auth &bull; Admin Dashboards</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hero-quick-pill">
+                                            <i class="fa-brands fa-shopify"></i>
+                                            <div>
+                                                <div class="qp-title">Shopify &amp; WordPress</div>
+                                                <div class="qp-desc">Store Design &bull; Product Setup &bull; WordPress CMS</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hero-quick-pill">
+                                            <i class="fa-solid fa-code"></i>
+                                            <div>
+                                                <div class="qp-title">HTML5, CSS3 &amp; JS</div>
+                                                <div class="qp-desc">Bootstrap 5 &bull; Modern JavaScript &bull; Responsive UI/UX</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     INFINITE SCROLLING MARQUEE TICKER
+                     ========================================================================== -->
+                <div class="Devix-marquee-strip" aria-hidden="true">
+                    <div class="Devix-marquee-inner">
+                        <div class="Devix-marquee-text">
+                            <span>CORE PHP &amp; MYSQL</span> <span class="dot">&bull;</span>
+                            <span>SHOPIFY &amp; WORDPRESS</span> <span class="dot">&bull;</span>
+                            <span>HTML5, CSS3 &amp; JAVASCRIPT</span> <span class="dot">&bull;</span>
+                            <span>WORDPRESS &amp; FIGMA</span> <span class="dot">&bull;</span>
+                            <span>XML, XSL &amp; TECHNICAL SEO</span> <span class="dot">&bull;</span>
+                        </div>
+                        <div class="Devix-marquee-text">
+                            <span>CORE PHP &amp; MYSQL</span> <span class="dot">&bull;</span>
+                            <span>SHOPIFY &amp; WORDPRESS</span> <span class="dot">&bull;</span>
+                            <span>HTML5, CSS3 &amp; JAVASCRIPT</span> <span class="dot">&bull;</span>
+                            <span>WORDPRESS &amp; FIGMA</span> <span class="dot">&bull;</span>
+                            <span>XML, XSL &amp; TECHNICAL SEO</span> <span class="dot">&bull;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================================================
+                     SECTION 01 ON HOME: FEATURED PROJECTS PREVIEW (Crisp Editorial Light Section)
+                     ========================================================================== -->
+                <section class="website-section-3 section-padding fix section-editorial-light">
+                    <div class="container">
+                        <div class="section-title-area mb-5">
+                            <div class="section-title split-title">
+                                <span class="sub-title" style="color: #0284c7; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+                                    Production Works
+                                </span>
+                                <h2 class="style-3" style="color: #12141a;">
+                                    Featured Case Studies &amp; <br> Web Platforms
+                                </h2>
+                            </div>
+                            <a href="work.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">
+                                View Full Case Studies
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+
+                        <!-- 3 Flagship Projects Showcase -->
+                        <div class="row g-4">
+                            
+                            <!-- Project 01: VEBRA -->
+                            <div class="col-12">
+                                <div class="Devix-project-card wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="row g-0 align-items-stretch">
+                                        <div class="col-lg-6">
+                                            <div class="project-thumbnail-wrapper h-100" style="background: #0f1118; padding: 14px; border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                                <span class="project-category-badge">
+                                                    <i class="fa-solid fa-server text-lime me-1"></i> Core PHP &amp; MySQL
+                                                </span>
+                                                <img src="assets/img/vebra.png" alt="VEBRA Music and E-Commerce Web App" loading="lazy" style="width: 100% !important; height: auto !important; max-height: 360px !important; object-fit: contain !important; border-radius: 10px !important;">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="project-body-content">
+                                                <div class="project-client-flag">PROJECT 01 &bull; PRODUCTION APP</div>
+                                                <h3 style="font-size: 1.6rem; font-weight: 800; color: #12141a; margin-bottom: 0.75rem;">
+                                                    VEBRA &mdash; Music &amp; E-Commerce Web App
+                                                </h3>
+                                                <p style="font-size: 0.95rem; color: #475569; line-height: 1.65; margin-bottom: 1.25rem;">
+                                                    Full-stack music streaming and vinyl e-commerce web application featuring user authentication, dynamic artist/song database, shopping cart, and custom Admin Dashboard.
+                                                </p>
+                                                
+                                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-php text-primary"></i> Core PHP</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-solid fa-database text-primary"></i> MySQL 3NF</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-js text-primary"></i> JavaScript</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-bootstrap text-primary"></i> Bootstrap</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-solid fa-envelope text-primary"></i> PHPMailer</span>
+                                                </div>
+
+                                                <div class="d-flex flex-wrap gap-3 align-items-center mt-auto pt-3 border-top">
+                                                    <a href="https://vebraofficial.great-site.net/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="theme-btn" style="padding: 10px 22px; font-size: 0.88rem;">
+                                                        Live Demo
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                                    </a>
+                                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="theme-btn style-2" style="padding: 10px 22px; font-size: 0.88rem; background: #12141a; color: #ffffff; border-color: #12141a;">
+                                                        Source Code
+                                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 02: FurEver Care -->
+                            <div class="col-12">
+                                <div class="Devix-project-card wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="row g-0 align-items-stretch">
+                                        <div class="col-lg-6">
+                                            <div class="project-thumbnail-wrapper h-100" style="background: #0f1118; padding: 14px; border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                                <span class="project-category-badge">
+                                                    <i class="fa-solid fa-code text-lime me-1"></i> Interactive Frontend Web App
+                                                </span>
+                                                <img src="assets/img/Furever.png" alt="FurEver Care Pet Wellness Portal" loading="lazy" style="width: 100% !important; height: auto !important; max-height: 360px !important; object-fit: contain !important; border-radius: 10px !important;">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="project-body-content">
+                                                <div class="project-client-flag">PROJECT 02 &bull; INTERACTIVE FRONTEND WEB APP</div>
+                                                <h3 style="font-size: 1.6rem; font-weight: 800; color: #12141a; margin-bottom: 0.75rem;">
+                                                    FurEver Care &mdash; Pet Wellness &amp; Veterinary Portal
+                                                </h3>
+                                                <p style="font-size: 0.95rem; color: #475569; line-height: 1.65; margin-bottom: 1.25rem;">
+                                                    Interactive pet care and veterinary emergency triage guide built with HTML5, CSS3, Vanilla JavaScript, and JSON data schemas. Features a personalized owner onboarding questionnaire, companion health journal with LocalStorage persistence, feeding portion calculator, and 24/7 symptom triage guide.
+                                                </p>
+                                                
+                                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-html5 text-primary"></i> HTML5</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-css3-alt text-primary"></i> CSS3</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-js text-primary"></i> Vanilla JS</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-solid fa-code text-primary"></i> JSON</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-solid fa-database text-primary"></i> LocalStorage</span>
+                                                </div>
+
+                                                <div class="d-flex flex-wrap gap-3 align-items-center mt-auto pt-3 border-top">
+                                                    <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: #0f172a; color: #c8f558; border: 1px solid rgba(200, 245, 88, 0.3); padding: 8px 18px; border-radius: 9999px; font-family: 'Space Grotesk', sans-serif; font-size: 0.86rem; font-weight: 700; letter-spacing: 0.02em;">
+                                                        <i class="fa-solid fa-layer-group" style="color: #c8f558;"></i>
+                                                        UI/UX Design Concept &bull; Interactive Prototype
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 03: Excellent Coaching -->
+                            <div class="col-12">
+                                <div class="Devix-project-card wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="row g-0 align-items-stretch">
+                                        <div class="col-lg-6">
+                                            <div class="project-thumbnail-wrapper h-100" style="background: #0f1118; padding: 14px; border-radius: 16px; display: flex; align-items: center; justify-content: center;">
+                                                <span class="project-category-badge">
+                                                    <i class="fa-solid fa-graduation-cap text-lime me-1"></i> Educational Site
+                                                </span>
+                                                <img src="assets/img/excellent.png" alt="Excellent Coaching Multi-Page Platform" loading="lazy" style="width: 100% !important; height: auto !important; max-height: 360px !important; object-fit: contain !important; border-radius: 10px !important;">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="project-body-content">
+                                                <div class="project-client-flag">PROJECT 03 &bull; RESPONSIVE PORTAL</div>
+                                                <h3 style="font-size: 1.6rem; font-weight: 800; color: #12141a; margin-bottom: 0.75rem;">
+                                                    Excellent Coaching &mdash; Multi-Page Learning Platform
+                                                </h3>
+                                                <p style="font-size: 0.95rem; color: #475569; line-height: 1.65; margin-bottom: 1.25rem;">
+                                                    Responsive multi-page educational website with course categories, instructor profiles, student testimonials, and interactive sliders.
+                                                </p>
+                                                
+                                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-html5 text-primary"></i> HTML5</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-css3-alt text-primary"></i> CSS3</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-brands fa-bootstrap text-primary"></i> Bootstrap</span>
+                                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; background: #f1f5f9; padding: 4px 10px; border-radius: 6px; color: #1e293b;"><i class="fa-solid fa-code-merge text-primary"></i> jQuery</span>
+                                                </div>
+
+                                                <div class="d-flex flex-wrap gap-3 align-items-center mt-auto pt-3 border-top">
+                                                    <a href="https://aryankumar-netizen.github.io/Excellent_Coaching/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="theme-btn" style="padding: 10px 22px; font-size: 0.88rem;">
+                                                        Live Demo
+                                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                                    </a>
+                                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="theme-btn style-2" style="padding: 10px 22px; font-size: 0.88rem; background: #12141a; color: #ffffff; border-color: #12141a;">
+                                                        Source Code
+                                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     SECTION 02 ON HOME: SERVICES OVERVIEW (Bold Dark Section)
+                     ========================================================================== -->
+                <section class="section-editorial-light section-padding fix" style="background: #ffffff !important;">
+                    <div class="container">
+                        <div class="section-title-area mb-5">
+                            <div class="section-title split-title">
+                                <span class="sub-title" style="color: #0284c7; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+                                    Specialized Capabilities
+                                </span>
+                                <h2 class="style-3" style="color: #0f172a !important;">
+                                    Full-Stack Development &amp; <br> E-Commerce Systems
+                                </h2>
+                            </div>
+                            <a href="services.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">
+                                Explore All Services &amp; Process
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+
+                        <div class="row g-4">
+                            
+                            <!-- Service 01 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-service-card wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="service-mockup-top">
+                                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                        <div class="mockup-code-syntax">
+                                            <p><span class="kw">&lt;?php</span></p>
+                                            <p><span class="vr">$db</span> = <span class="kw">new</span> <span class="fn">PDO</span>(<span class="st">'mysql:...'</span>);</p>
+                                            <p><span class="vr">$stmt</span>-&gt;<span class="fn">execute</span>();</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card-body">
+                                        <div class="service-card-num">01 / BACKEND</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.75rem;">
+                                            Full-Stack PHP &amp; MySQL
+                                        </h3>
+                                        <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+                                            Relational database modeling (3NF), Web APIs, session authentication, and custom admin portals.
+                                        </p>
+                                        <a href="services.html" style="font-size: 0.85rem; font-weight: 700; color: var(--Devix-lime); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                            <span>Read Details</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 02 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-service-card wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="service-mockup-top">
+                                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <span style="font-size: 0.72rem; color: #94a3b8; font-family: 'JetBrains Mono', monospace;">Shopify Store</span>
+                                            <span style="font-size: 0.72rem; color: var(--Devix-lime); font-family: 'JetBrains Mono', monospace; font-weight: 700;">Live Store</span>
+                                        </div>
+                                        <div style="background: rgba(255,255,255,0.05); padding: 6px; border-radius: 6px; margin-top: 6px; font-size: 0.72rem; color: #cbd5e1; font-family: 'JetBrains Mono', monospace;">
+                                            Shopify &bull; Product Catalog Setup
+                                        </div>
+                                    </div>
+                                    <div class="service-card-body">
+                                        <div class="service-card-num">02 / E-COMMERCE</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.75rem;">
+                                            Shopify &amp; WordPress
+                                        </h3>
+                                        <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+                                            Single &amp; multi-product stores, product catalog setup, and responsive WordPress customization.
+                                        </p>
+                                        <a href="services.html" style="font-size: 0.85rem; font-weight: 700; color: var(--Devix-lime); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                            <span>Read Details</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 03 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-service-card wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="service-mockup-top">
+                                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                        <div class="mockup-code-syntax">
+                                            <p><span class="kw">function</span> <span class="fn">initStore</span>() {</p>
+                                            <p>&nbsp;&nbsp;<span class="kw">const</span> <span class="vr">cart</span> = <span class="kw">new</span> <span class="fn">ShoppingCart</span>();</p>
+                                            <p>&nbsp;&nbsp;<span class="vr">cart</span>.<span class="fn">render</span>();</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-card-body">
+                                        <div class="service-card-num">03 / FRONTEND</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.75rem;">
+                                            HTML5, CSS3 &amp; JS
+                                        </h3>
+                                        <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+                                            Pixel-perfect HTML5, CSS3, modern JavaScript ES6+, Bootstrap 5, and responsive mobile interfaces.
+                                        </p>
+                                        <a href="services.html" style="font-size: 0.85rem; font-weight: 700; color: var(--Devix-lime); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                            <span>Read Details</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service 04 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-service-card wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="service-mockup-top">
+                                        <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                        <div class="d-flex justify-content-around align-items-center mt-3 text-center">
+                                            <div>
+                                                <div style="color: #10b981; font-weight: 800; font-family: 'JetBrains Mono', monospace;">100</div>
+                                                <div style="font-size: 0.65rem; color: #94a3b8;">Perf</div>
+                                            </div>
+                                            <div>
+                                                <div style="color: #10b981; font-weight: 800; font-family: 'JetBrains Mono', monospace;">100</div>
+                                                <div style="font-size: 0.65rem; color: #94a3b8;">SEO</div>
+                                            </div>
+                                            <div>
+                                                <div style="color: #10b981; font-weight: 800; font-family: 'JetBrains Mono', monospace;">100</div>
+                                                <div style="font-size: 0.65rem; color: #94a3b8;">A11y</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-card-body">
+                                        <div class="service-card-num">04 / DESIGN &amp; SEO</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.75rem;">
+                                            Figma UI &amp; SEO
+                                        </h3>
+                                        <p style="font-size: 0.88rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+                                            Wireframing in Figma, XML/XSL data formatting, Git/GitHub versioning, and technical SEO audits.
+                                        </p>
+                                        <a href="services.html" style="font-size: 0.85rem; font-weight: 700; color: var(--Devix-lime); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                            <span>Read Details</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     SECTION 03 ON HOME: EDUCATION & EXPERIENCE SNAPSHOT (Crisp Editorial Light)
+                     ========================================================================== -->
+                <section class="section-editorial-light section-padding fix">
+                    <div class="container">
+                        <div class="section-title-area mb-5">
+                            <div class="section-title split-title">
+                                <span class="sub-title" style="color: #0284c7; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+                                    Track Record
+                                </span>
+                                <h2 class="style-3" style="color: #12141a;">
+                                    Education, Honors &amp; <br> Real-World Experience
+                                </h2>
+                            </div>
+                            <a href="experience.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">
+                                View Full Experience &amp; Skills
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+
+                        <div class="row g-4">
+                            
+                            <!-- Aptech Diploma -->
+                            <div class="col-lg-4">
+                                <div style="background: #ffffff; border: 1px solid rgba(18, 20, 26, 0.08); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.04); height: 100%;">
+                                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 700; color: #0284c7; margin-bottom: 0.35rem;">
+                                        2025 &ndash; PRESENT &bull; 2ND YEAR
+                                    </div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #12141a; margin-bottom: 0.35rem;">
+                                        3-Year IT ACCP AI Diploma
+                                    </h3>
+                                    <div style="font-size: 0.88rem; color: #64748b; font-weight: 600; margin-bottom: 0.75rem;">
+                                        Aptech Computer Education &bull; Karachi
+                                    </div>
+                                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                                        Completed 1st Year (Frontend HTML/CSS/JS, XML/XSL, Technical SEO, Core PHP &amp; MySQL); currently starting Laravel.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Woodland Secondary School (1st Position Holder) -->
+                            <div class="col-lg-4">
+                                <div style="background: #ffffff; border: 1px solid rgba(18, 20, 26, 0.08); border-left: 4px solid #f59e0b; border-radius: 20px; padding: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.04); height: 100%;">
+                                    <div class="d-flex justify-content-between align-items-baseline mb-1">
+                                        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 700; color: #d97706;">DISTINCTION</span>
+                                        <span style="font-size: 0.74rem; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 999px; font-weight: 700;">1st Position Holder</span>
+                                    </div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #12141a; margin-bottom: 0.35rem;">
+                                        Matriculation (Science/CS)
+                                    </h3>
+                                    <div style="font-size: 0.88rem; color: #b45309; font-weight: 600; margin-bottom: 0.75rem;">
+                                        Woodland Secondary School &bull; North Karachi
+                                    </div>
+                                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                                        Graduated as <strong>1st Position Holder among Boys</strong> in class near Power House 11-A, demonstrating top mathematical &amp; CS honors.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Freelance Experience -->
+                            <div class="col-lg-4">
+                                <div style="background: #ffffff; border: 1px solid rgba(18, 20, 26, 0.08); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.04); height: 100%;">
+                                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 700; color: #0284c7; margin-bottom: 0.35rem;">
+                                        2025 &ndash; PRESENT &bull; FREELANCE
+                                    </div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #12141a; margin-bottom: 0.35rem;">
+                                        Freelance Web &amp; E-Commerce
+                                    </h3>
+                                    <div style="font-size: 0.88rem; color: #64748b; font-weight: 600; margin-bottom: 0.75rem;">
+                                        Self-Employed &bull; Remote Client Deliveries
+                                    </div>
+                                    <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                                        Launched Shopify e-commerce stores with customized themes and product catalog setups, deployed live PHP/MySQL web apps on hosting, and built responsive sites.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     SECTION 04 ON HOME: 4-STEP WORK PROCESS & CTA BANNER (Dark Section)
+                     ========================================================================== -->
+                <section class="section-editorial-light section-padding fix" style="background: #f8fafc !important;">
+                    <div class="container">
+                        <div class="section-title text-center mb-5">
+                            <span class="sub-title" style="color: #0284c7; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+                                How I Work
+                            </span>
+                            <h2 class="style-3" style="color: #0f172a !important;">
+                                A Straightforward 4-Step Process
+                            </h2>
+                        </div>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-process-card wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="process-step-digit">01</div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.65rem;">
+                                        Plan &amp; Wireframe
+                                    </h3>
+                                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6;">
+                                        Gathering requirements, drafting 3NF database models, and designing Figma wireframes to align visual direction.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-process-card wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="process-step-digit">02</div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.65rem;">
+                                        Clean Code
+                                    </h3>
+                                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6;">
+                                        Writing clean, modular code in Core PHP, HTML5/CSS3/JS, or Shopify Liquid with password encryption and security best practices.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-process-card wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="process-step-digit">03</div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.65rem;">
+                                        Test &amp; Optimize
+                                    </h3>
+                                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6;">
+                                        Cross-device mobile testing, performance profiling, SQL query optimization, and technical SEO validation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="Devix-process-card wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="process-step-digit">04</div>
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: #0f172a !important; margin-bottom: 0.65rem;">
+                                        Host &amp; Launch
+                                    </h3>
+                                    <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6;">
+                                        Zero-downtime server hosting deployment, SSL certificate setup, DNS propagation, and post-launch verification.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact CTA Banner -->
+                        <div class="ak-emblem-card text-center p-4 p-lg-5 wow fadeInUp" data-wow-delay=".3s" style="background: linear-gradient(135deg, #161821 0%, #1f2330 100%); border-color: rgba(200, 245, 88, 0.25);">
+                            <span class="Devix-status-badge mb-3">
+                                <span class="pulse-beacon-dot"></span> Let's Work Together
+                            </span>
+                            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; color: #ffffff; margin-bottom: 1rem;">
+                                Have a Project in Mind? Let's Work Together.
+                            </h2>
+                            <p style="font-size: 1.05rem; color: #cbd5e1; max-width: 600px; margin: 0 auto 2rem auto;">
+                                Whether you need a dynamic PHP/MySQL database web app, a high-converting Shopify store, or a custom frontend interface, I'm ready to bring it to life.
+                            </p>
+                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                <a href="contact.html" class="theme-btn">
+                                    Let's Talk
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                </a>
+                                <a href="cv.html" class="theme-btn style-2" style="background: transparent; color: #ffffff; border-color: rgba(255,255,255,0.2);">
+                                    View Interactive CV
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left: 6px; display: inline-block; vertical-align: middle;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ==========================================================================
+                     Devix AGENCY FOOTER
+                     ========================================================================== -->
+                <footer class="Devix-site-footer">
+                    <div class="container">
+                        <div class="row g-4 justify-content-between">
+                            
+                            <div class="col-lg-4">
+                                <a href="index.html" class="Devix-footer-logo">
+                                    Aryan<span style="color: var(--Devix-lime);">.</span>
+                                </a>
+                                <p style="font-size: 0.92rem; color: #94a3b8; max-width: 320px; line-height: 1.6; margin-bottom: 1.5rem;">
+                                    Full Stack Web &amp; E-Commerce Developer based in Karachi, Pakistan. Building performant digital products with Core PHP, MySQL, HTML5/CSS3/JS, and Shopify.
+                                </p>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="pulse-beacon-dot"></span>
+                                    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: #cbd5e1;">Available for Remote Work &bull; PKT</span>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <div class="Devix-footer-nav-title">Navigation</div>
+                                <ul class="Devix-footer-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="work.html">Work (3 Projects)</a></li>
+                                    <li><a href="services.html">Services &amp; Process</a></li>
+                                    <li><a href="experience.html">Experience &amp; Skills</a></li>
+                                    <li><a href="contact.html">Contact Me</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-lg-3">
+                                <div class="Devix-footer-nav-title">Profiles &amp; CV</div>
+                                <ul class="Devix-footer-list">
+                                    <li><a href="https://www.linkedin.com/in/aryan-kumar-99681443a/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></li>
+                                    <li><a href="https://www.upwork.com/freelancers/~01c5ace242e3d3f9a1?viewMode=1" target="_blank" rel="noopener noreferrer">Upwork &rarr;</a></li>
+                                    <li><a href="https://www.freelancer.com/u/aryankumardev" target="_blank" rel="noopener noreferrer">Freelancer &rarr;</a></li>
+                                    <li><a href="cv.html" style="color: var(--Devix-lime);">View Interactive CV &rarr;</a></li>
+                                    <li><a href="./Aryan_Kumar_CV_Resume.pdf" download="Aryan_Kumar_CV_Resume.pdf" style="color: var(--Devix-lime);">Download CV (PDF) &darr;</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div style="margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; color: #64748b;">
+                            <div>
+                                &copy; 2026 Aryan Kumar. All rights reserved. &bull; Karachi, Pakistan.
+                            </div>
+                            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #94a3b8;">
+                                Aryan Creative Agency Theme &bull; Fast, Semantic &amp; Responsive
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- All JS Plugins -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/TextPlugin.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/parallaxie.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom-Devix.js"></script>
+</body>
+</html>
